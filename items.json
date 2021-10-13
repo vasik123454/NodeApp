@@ -1,0 +1,10 @@
+{
+    "keyboards": [
+        {
+            "id": 1,
+            "name": "Escape 60",
+            "price": 17999,
+            "imgName": "escape60.png"
+        }
+    ]
+}
