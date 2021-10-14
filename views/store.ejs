@@ -59,24 +59,24 @@
                         <img class="shop-item-image" src="/images/<%= item.imgName %>">
                         <div class="shop-item-details">
                             <span class="shop-item-price"><%= item.price / 100 %> Kč</span>
-                            <button class="btn btn-primary shop-item-button" type="button">PŘIDAT DO KOŠÍKU</button>
+                            <button class="btn btn-primary shop-item-button btn-purchase" type="button">KOUPIT PRODUKT</button>
                         </div>
                     </div>
                 <% }) %>
             </div>
         </section>
-        <section class="container content-section">
+        <section class="container content-section invisible">
             <h2 class="section-header">Košík</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">PRODUKT</span>
                 <span class="cart-price cart-header cart-column">CENA</span>
-                <span class="cart-quantity cart-header cart-column">POČET KUS.</span>
+                <span class="cart-quantity cart-header cart-column">ODEBRAT</span>
             </div>
             <div class="cart-items">
             </div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">0Kč</span>
+                <span class="cart-total-price">0 Kč</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button">KOUPIT</button>
         </section>
