@@ -421,8 +421,8 @@ body {
     }
 }
 
-.yellow {
-    color: rgb(255, 255, 0);
+.black {
+    color: rgb(0, 0, 0);
 }
 
 
@@ -635,13 +635,11 @@ body {
 
 #main-contact {
     position: relative;
-    float: left;
     z-index: 10;
     top: 30vh;
     padding-bottom: 4vh;
     margin-left: 10%;
     color: white;
-    width: 80%;
     height: 20%;
     overflow: hidden;
 }
@@ -659,7 +657,7 @@ body {
 
 @media (max-width: 800px) {
     .main-contact-items {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .shop-item-image {
@@ -672,3 +670,37 @@ body {
         font-size: 13px;
     }
 }
+
+
+#main-about {
+    position: relative;
+    top: 200px;
+    margin: 0 20%;
+    overflow: hidden;
+}
+
+.main-about-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    
+
+}
+
+.main-about-item {
+    padding: 20px 0;
+    font-size: 20px;
+
+}
+
+@media (max-width: 600px) {
+    .main-about-item {
+        font-size: 17px;
+    }
+    #main-about {
+        margin: 0 10%;
+    }
+}
+
