@@ -14,7 +14,7 @@
     />
     <script src="https://checkout.stripe.com/checkout.js" defer></script>
     <script>
-        var stripePublicKey = '<%= stripePublicKey %>'
+        var stripePublicKey;
     </script>
     <script src="store.js" defer></script>
     <title>Escape Keyboards | E-SHOP</title>
@@ -65,7 +65,7 @@
                 <% }) %>
             </div>
         </section>
-        <section class="kokot">
+        <section class="invisible">
             <h2 class="section-header">Košík</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">PRODUKT</span>
