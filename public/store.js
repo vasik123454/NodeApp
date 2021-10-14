@@ -31,7 +31,7 @@ function ready() {
 
 function purchaseClicked() {
     var priceElement = document.getElementsByClassName('cart-total-price')[0]
-    var price = parseFloat(priceElement.innerText.replace('$', '')) * 100
+    var price = parseFloat(priceElement.innerText.replace('Kč', '')) * 100
     fetch('/purchase', {
         method: 'POST',
         headers: {
@@ -113,10 +113,10 @@ function updateCartTotal() {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var price = parseFloat(priceElement.innerText.replace('Kč', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = total + ' Kč'
 }
